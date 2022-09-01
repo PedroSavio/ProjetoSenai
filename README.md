@@ -2,7 +2,7 @@
 
 > Projeto achados e perddos
 
-![preview](public/static/preview.jpg)
+![preview](public/static/previewS.jpg)
 
 ## Getting started
 
