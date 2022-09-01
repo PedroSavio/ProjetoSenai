@@ -9,7 +9,6 @@ import Page from '../components/Page';
 import Logo from '../components/Logo';
 // sections
 import { LoginForm } from '../sections/auth/login';
-import AuthSocial from '../sections/auth/AuthSocial';
 
 // ----------------------------------------------------------------------
 
@@ -68,10 +67,10 @@ export default function Login() {
           <Logo />
 
           {smUp && (
-            <Typography variant="body2" sx={{ mt: { md: -2 } }}>
-              Don’t have an account? {''}
+            <Typography variant="body2" sx={{ mt: { md: -2} }}>
+              Não possui uma conta? {''}
               <Link variant="subtitle2" component={RouterLink} to="/register">
-                Get started
+              Registre-se
               </Link>
             </Typography>
           )}
@@ -79,8 +78,8 @@ export default function Login() {
 
         {mdUp && (
           <SectionStyle>
-            <Typography variant="h3" sx={{ px: 5, mt: 10, mb: 5 }}>
-              Hi, Welcome Back
+            <Typography variant="h3" sx={{ px: 5, mt: 2, mb: 5 } }>
+              Oi, Bem vindo ao Finds Screen
             </Typography>
             <img src="/static/illustrations/illustration_login.png" alt="login" />
           </SectionStyle>
@@ -88,21 +87,17 @@ export default function Login() {
 
         <Container maxWidth="sm">
           <ContentStyle>
-            <Typography variant="h4" gutterBottom>
-              Sign in to Minimal
+            <Typography variant="h4" sx={{ mb: 5 }} gutterBottom>
+            Fazer login no Finds Screen
             </Typography>
-
-            <Typography sx={{ color: 'text.secondary', mb: 5 }}>Enter your details below.</Typography>
-
-            <AuthSocial />
 
             <LoginForm />
 
             {!smUp && (
               <Typography variant="body2" align="center" sx={{ mt: 3 }}>
-                Don’t have an account?{' '}
+                Não possui uma conta? {' '}
                 <Link variant="subtitle2" component={RouterLink} to="/register">
-                  Get started
+                Registre-se
                 </Link>
               </Typography>
             )}
